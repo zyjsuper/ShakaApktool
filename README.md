@@ -20,13 +20,13 @@ It is NOT intended for piracy and other non-legal uses. It could be used for loc
 - [Download](https://pan.baidu.com/s/1jIPOHZg)(ht4j)
 
 
-1.Build First
+1.Build First ,Download ShakaApktool Source
 
-Download ShakaApktool Source
-
+```
 git clone https://github.com/rover12421/ShakaApktool.git
 or(ignore 'git submodule' later) 
 git clone --recursive https://github.com/rover12421/ShakaApktool.git 
+```
 
 2. Init and Update Submodel apktool
 
@@ -36,13 +36,17 @@ git submodule init
 git submodule update
 ```
 3. Prepare
+
+```
 win: ./gradlew.bat
 *nix: ./gradlew
 
 remember the path for gradle3.5
+```
 
 3. Build Jar File
 
+```
 ../installpath/bin/gradle3.5 fatjar
 Run Jar Test
 
@@ -61,6 +65,7 @@ gradle fatjar
 Run Jar Test
 
 java -jar shaka.cli/build/libs/shaka.cli.jar
+```
 
 #### Other
 - QQ Group : 198996891
