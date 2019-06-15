@@ -19,5 +19,37 @@ It is NOT intended for piracy and other non-legal uses. It could be used for loc
 - [How To Build](https://github.com/rover12421/ShakaApktool/wiki/How-To-Build)
 - [Download](https://pan.baidu.com/s/1jIPOHZg)(ht4j)
 
+Build First
+Download ShakaApktool Source
+
+git clone https://github.com/rover12421/ShakaApktool.git
+or(ignore 'git submodule' later) git clone --recursive https://github.com/rover12421/ShakaApktool.git 2. Init and Update Submodel apktool
+
+```
+cd ShakaApktool
+git submodule init
+git submodule update
+```
+Build Jar File
+
+gradle fatjar
+Run Jar Test
+
+java -jar shaka.cli/build/libs/shaka.cli.jar
+
+Build Again
+Update ShakaApktool Source
+
+git pull
+Update Submodel apktool
+
+git submodule update
+Build Jar File
+
+gradle fatjar
+Run Jar Test
+
+java -jar shaka.cli/build/libs/shaka.cli.jar
+
 #### Other
 - QQ Group : 198996891
